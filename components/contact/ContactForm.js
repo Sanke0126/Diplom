@@ -101,7 +101,7 @@ const ContactForm = () => {
           <textarea name="feedback" id="feedback" cols="30" rows="3"></textarea>
         </div>
         <div className="flex justify-end w-full py-4">
-          <button className="button bg-yellow">send</button>
+          <button className="button bg-yellow">Send To Feedback</button>
         </div>
       </form>
     </div>

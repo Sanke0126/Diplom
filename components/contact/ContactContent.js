@@ -14,11 +14,11 @@ const ContactContent = () => {
         </p>
       </div>
       <div>
-        <h3 className="font-semibold">Jl. Sesuatu No.99, Komplek Sesuatu</h3>
-        <h5>Kec. Sesuatu, Kota Sesuatu, Indonesia</h5>
+        <h3 className="font-semibold">Ulaanbaatar, Mongolia</h3>
+        <h5>Chingeltei District, Indra Cyber Institute</h5>
       </div>
       <div className="flex flex-col gap-4">
-        {["+62666666666", "+6255555555"].map((num, index) => (
+        {["+976 75555555", "+976 90840126"].map((num, index) => (
           <CallUs key={index} phoneNumber={num} />
         ))}
       </div>

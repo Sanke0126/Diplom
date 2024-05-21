@@ -10,7 +10,7 @@ const ReservationForm = () => {
             name="name"
             id="name"
             required
-            placeholder="e.g. John Doe"
+            placeholder="Naranbaatar"
           />
         </div>
         <div className="control-group">
@@ -20,7 +20,7 @@ const ReservationForm = () => {
             name="email"
             id="email"
             required
-            placeholder="e.g. john.doe@email.com"
+            placeholder="********@example.com"
           />
         </div>
       </div>
@@ -33,32 +33,50 @@ const ReservationForm = () => {
             name="phone"
             id="phone"
             required
-            placeholder="e.g. +555555"
+            placeholder="+976 ********"
           />
         </div>
         <div className="control-group">
-          <label htmlFor="guess">Table For</label>
-          <input
-            type="number"
-            name="guess"
-            id="guess"
-            required
-            placeholder="2 people"
-          />
+          <label htmlFor="partySize">Party Size</label>
+          <select name="partySize" id="partySize" required>
+            <option value="" disabled selected hidden>
+              Select party size
+            </option>
+            {[...Array(12).keys()].map((i) => (
+              <option key={i + 1} value={i + 1}>
+                {i + 1} {i + 1 === 1 ? "person" : "people"}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
-      {/* ocassion */}
       <div className="control-group">
-        <label htmlFor="ocassion">Ocassion</label>
-        <input
-          type="text"
-          name="ocassion"
-          id="ocassion"
-          required
-          placeholder="e.g. Dinner, Birthday, Corporate, Wedding ..."
-        />
+        <label htmlFor="occasion">Occasion</label>
+        <select name="occasion" id="occasion" required>
+          <option value="" disabled selected hidden>
+            Select occasion
+          </option>
+          {[
+            "Dinner",
+            "Birthday",
+            "Corporate",
+            "Wedding",
+            "Anniversary",
+            "Engagement",
+            "Graduation",
+            "Holiday",
+            "Meeting",
+            "Party",
+            "Retirement",
+            "Reunion",
+          ].map((occasion, index) => (
+            <option key={index} value={occasion}>
+              {occasion}
+            </option>
+          ))}
+        </select>
       </div>
-      {/* date - time */}
+
       <div className="input-group">
         <div className="control-group">
           <label htmlFor="date">Select Date</label>
