@@ -5,7 +5,9 @@ import BestSeller from "./BestSeller";
 import Recommended from "./Recommended";
 
 const MealsItem = ({ item }) => {
-  const formattedPrice = `Rp.${item.price.toLocaleString("id-ID")}`;
+  const formattedPrice = `MNT​​​​​​​​​​​ ${item.price.toLocaleString(
+    "id-ID"
+  )}₮`;
   const cartItems = useSelector((state) => state.cart.items);
   const existingItemIndex = cartItems.findIndex(
     (meals) => meals._id === item._id

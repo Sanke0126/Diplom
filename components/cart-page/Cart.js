@@ -18,7 +18,7 @@ const Cart = ({ restoStatus }) => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   const dispatch = useDispatch();
-  const formatedTotalAmount = `Rp.${totalAmount.toLocaleString("en-US")}`;
+  const formatedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString("en-US")}₮`;
 
   const [unsavedChanges, setUnsavedChanges] = useState(true);
   const [customerName, setCustomerName] = useState("");

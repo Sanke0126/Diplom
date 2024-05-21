@@ -3,7 +3,7 @@ import MenuButton from "../menu/MenuButton";
 
 const CartItem = ({ item, onUpdateOrderedMeals }) => {
   const isExist = item.amount > 0;
-  const totalPrice = `Rp.${(item.amount * item.price).toLocaleString("en-US")}`;
+  const totalPrice = `MNT​​​​​​​​​​​_${(item.amount * item.price).toLocaleString("en-US")}₮`;
 
   const [note, setNote] = useState(item.note);
 
@@ -29,7 +29,7 @@ const CartItem = ({ item, onUpdateOrderedMeals }) => {
       </div>
       <div className="grid grid-cols-3 justify-center items-end py-1">
         <div className="flex gap-4 items-end col-span-2">
-          <label htmlFor={item.name}>note:</label>
+          <label htmlFor={item.name}>Note:</label>
           <textarea
             name={item.name}
             id={item.name}

@@ -12,7 +12,7 @@ const OrderedDetails = ({ order }) => {
     totalAmount,
   } = order;
 
-  const formattedTotalAmount = `Rp.${totalAmount.toLocaleString("en-US")}`;
+  const formattedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString("en-US")}₮`;
 
   return (
     <div className="flex flex-col justify-between shadow-xl p-4 md:p-8 rounded-xl w-full lg:w-[500px] border-2 border-stone-100">
@@ -52,9 +52,9 @@ const OrderedDetails = ({ order }) => {
                 <h2 className="font-semibold">{item.name}</h2>
                 <div className="flex gap-2">
                   <h4>{`x${item.amount}`}</h4>
-                  <h4>{`Rp.${(item.amount * item.price).toLocaleString(
+                  <h4>{`MNT ${(item.amount * item.price).toLocaleString(
                     "en-US"
-                  )}`}</h4>
+                  )}₮`}</h4>
                 </div>
               </div>
               {item.note && <p className="text-sm">{`note: ${item.note}`}</p>}

@@ -58,11 +58,11 @@ const OrderActivityItem = ({ item }) => {
               <div className="flex justify-between gap-6">
                 <h5>{meal.name}</h5>
                 <div className="flex gap-4">
-                  <h5>{`Rp.${meal.price.toLocaleString("en-US")}`}</h5>
+                  <h5>{`MNT ${meal.price.toLocaleString("en-US")}₮`}</h5>
                   <h5>{`x${meal.amount}`}</h5>
-                  <h5>{`Rp.${(meal.amount * meal.price).toLocaleString(
+                  <h5>{`MNT ${(meal.amount * meal.price).toLocaleString(
                     "en-US"
-                  )}`}</h5>
+                  )}₮`}</h5>
                 </div>
               </div>
               {meal.note && <p className="text-sm">{`note: ${meal.note}`}</p>}
@@ -70,7 +70,7 @@ const OrderActivityItem = ({ item }) => {
           ))}
           <div className="flex justify-between font-semibold mt-4">
             <h5>Total price</h5>
-            <h5>{`Rp.${item.totalAmount.toLocaleString("en-US")}`}</h5>
+            <h5>{`MNT ${item.totalAmount.toLocaleString("en-US")}₮`}</h5>
           </div>
           <button
             onClick={() => setSeeDetails((prev) => !prev)}

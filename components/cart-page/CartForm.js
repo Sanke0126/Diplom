@@ -23,7 +23,7 @@ const CartForm = (props) => {
               name="name"
               id="name"
               required
-              placeholder="e.g. Budi Budiman"
+              placeholder="Naranbaatar"
               value={customerName}
               onChange={(e) => onChangeCustomerName(e.target.value)}
             />
@@ -34,7 +34,7 @@ const CartForm = (props) => {
               type="email"
               name="email"
               id="email"
-              placeholder="e.g. budiman@gmail.com"
+              placeholder="********@example.com"
               value={email}
               onChange={(e) => onChangeEmail(e.target.value)}
             />
@@ -48,22 +48,29 @@ const CartForm = (props) => {
               name="phone"
               id="phone"
               required
-              placeholder="e.g. 6287834356777"
+              placeholder="+976 **** ****"
               value={phone}
               onChange={(e) => onChangePhone(e.target.value)}
             />
           </div>
           <div className="control-group">
             <label htmlFor="table">Table Number</label>
-            <input
-              type="text"
+            <select
               name="table"
               id="table"
               required
-              placeholder="e.g. A12"
               value={table}
               onChange={(e) => onChangeTable(e.target.value)}
-            />
+            >
+              <option value="" disabled selected hidden>
+                Select table number
+              </option>
+              {[...Array(12).keys()].map((i) => (
+                <option key={i + 1} value={`A${i + 1}`}>
+                  A{i + 1}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

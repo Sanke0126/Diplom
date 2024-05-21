@@ -5,7 +5,7 @@ import MenuButton from "../MenuButton";
 import { useSelector } from "react-redux";
 
 const BestSellingItemCard = ({ item }) => {
-  const formatedPrice = `Rp.${item.price.toLocaleString("id-ID")}`;
+  const formatedPrice = `MNT​​​​​​​​​​​ ${item.price.toLocaleString("id-ID")}₮`;
 
   const cartItems = useSelector((state) => state.cart.items);
   const existingItemIndex = cartItems.findIndex(
