@@ -30,9 +30,17 @@ const CategoryFilter = (props) => {
         onChange={filterCategoryHandler}
       >
         <option value="ALL">All</option>
+        <option value="MAIN DISH">Main Dish</option>
+        <option value="SALAD">Salad</option>
+        <option value="SOUP">Ramen</option>
+        <option value="MONGOLIAN">Mongolian food</option>
+        <option value="GRILLED">Grilled food</option>
+        <option value="HOT DRINK">Hot drink</option>
+        <option value="ADDITIONAL">Additional side dish</option>
+        <option value="DESSERT">Dessert</option>
         <option value="PIZZA">Pizza</option>
-        <option value="RAMEN">Ramen</option>
-        <option value="RICE">Rice</option>
+        <option value="ALCOHOL">Alcohol</option>
+        <option value="WINE">Wine</option>
         <option value="DRINKS">Drinks</option>
       </select>
 
@@ -49,6 +57,77 @@ const CategoryFilter = (props) => {
           All
         </button>
         <button
+          onClick={() => changeFilterHandler("MAIN DISH")}
+          className={`${filterBtnStyle} ${
+            currFilter === "MAIN DISH"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Main
+        </button>
+        <button
+          onClick={() => changeFilterHandler("SALAD")}
+          className={`${filterBtnStyle} ${
+            currFilter === "SALAD"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Salad
+        </button>
+        <button
+          onClick={() => changeFilterHandler("MONGOLIAN")}
+          className={`${filterBtnStyle} ${
+            currFilter === "MONGOLIAN"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Mongolian
+        </button>
+        <button
+          onClick={() => changeFilterHandler("GRILLED")}
+          className={`${filterBtnStyle} ${
+            currFilter === "GRILLED"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Grilled
+        </button>
+        <button
+          onClick={() => changeFilterHandler("HOT DRINK")}
+          style={{ whiteSpace: 'nowrap', textWrap: 'none' }}
+          className={`${filterBtnStyle} ${
+            currFilter === "HOT DRINK"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          } `}
+        >
+          Hot Drinks
+        </button>
+        <button
+          onClick={() => changeFilterHandler("ADDITIONAL")}
+          className={`${filterBtnStyle} ${
+            currFilter === "ADDITIONAL"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Additional
+        </button>
+        <button
+          onClick={() => changeFilterHandler("DESSERT")}
+          className={`${filterBtnStyle} ${
+            currFilter === "DESSERT"
+              ? "bg-yellow shadow-lg"
+              : "bg-stone-300 shadow-none"
+          }`}
+        >
+          Dessert
+        </button>
+        <button
           onClick={() => changeFilterHandler("PIZZA")}
           className={`${filterBtnStyle} ${
             currFilter === "PIZZA"
@@ -59,24 +138,14 @@ const CategoryFilter = (props) => {
           Pizza
         </button>
         <button
-          onClick={() => changeFilterHandler("RAMEN")}
+          onClick={() => changeFilterHandler("ALCOHOL")}
           className={`${filterBtnStyle} ${
-            currFilter === "RAMEN"
+            currFilter === "ALCOHOL"
               ? "bg-yellow shadow-lg"
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Ramen
-        </button>
-        <button
-          onClick={() => changeFilterHandler("RICE")}
-          className={`${filterBtnStyle} ${
-            currFilter === "RICE"
-              ? "bg-yellow shadow-lg"
-              : "bg-stone-300 shadow-none"
-          }`}
-        >
-          Rice
+          Alcohol
         </button>
         <button
           onClick={() => changeFilterHandler("DRINKS")}

@@ -2,10 +2,27 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
+const categories = [
+  "ALL",
+  "MAIN DISH",
+  "SALAD",
+  "SOUP",
+  "MONGOLIAN",
+  "GRILLED",
+  "HOT DRINK",
+  "ADDITIONAL",
+  "DESSERT",
+  "PIZZA",
+  "ALCOHOL",
+  "WINE",
+  "DRINKS",
+];
+
 const ProductSchema = new Schema(
   {
     category: {
       type: String,
+      enum: categories,
       required: true,
     },
     name: {
@@ -28,7 +45,7 @@ const ProductSchema = new Schema(
       type: Boolean,
       required: true,
     },
-    recomended: {
+    recommended: {
       type: Boolean,
       required: true,
     },

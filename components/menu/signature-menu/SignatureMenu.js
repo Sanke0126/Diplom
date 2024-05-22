@@ -11,13 +11,22 @@ const SignatureMenu = ({ menuList }) => {
   const router = useRouter();
 
   useEffect(() => {
+    console.log("Category updated:", category);
     if (category === "ALL") {
       setMenuItems(menuList);
     } else {
-      setMenuItems(menuList.filter((item) => item.category === `${category}`));
+      const filteredItems = menuList.filter(
+        (item) => item.category === category
+      );
+      console.log("Filtered items:", filteredItems);
+      setMenuItems(filteredItems);
+    }
+
+    // Conditionally apply router replace to avoid unnecessary routing
+    if (category !== "ALL") {
       router.replace("/#signature");
     }
-  }, [category]);
+  }, [category, menuList]);
 
   const changeCategoryHandler = (val) => {
     setCategory(val);
