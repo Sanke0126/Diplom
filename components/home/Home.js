@@ -8,7 +8,6 @@ const Home = () => {
     <>
       <section className="pt-8 bg-light-yellow">
         <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 custom-container">
-          {/* Main Photo of hero section */}
           <div className="w-full xl:w-[70vh] aspect-square sm:aspect-video lg:aspect-square lg:rounded-tl-[25%] overflow-hidden lg:order-2 lg:place-self-end">
             <Image
               src="/background/dinner-table-with-foods-soft-drinks-restaurant.jpg"
@@ -19,7 +18,6 @@ const Home = () => {
               priority={true}
             />
           </div>
-          {/* Main content of hero section */}
           <div className="tracking-tighter py-6 lg:order-1 xl:px-[10vh] 2xl:px-[0vh]">
             <h1 className="text-4xl lg:text-5xl xl:text-[9vh] xl:leading-[8vh] font-bold mb-4">
               Meet eat and enjoy the true taste

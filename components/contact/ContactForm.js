@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import FillStar from "../icons/FillStarIcon";
 import EmptyStarIcon from "../icons/EmptyStarIcon";
 
@@ -15,7 +14,6 @@ const ContactForm = () => {
           <label htmlFor="name">Your Name</label>
           <input type="text" name="name" id="name" />
         </div>
-        {/* Stars Input--------------------------------------------------------------- */}
         <h3 className="mb-2">How would you rate Hungray?</h3>
         <div
           onMouseLeave={() => setStarHover(0)}
@@ -35,7 +33,6 @@ const ContactForm = () => {
             className="invisible"
             onChange={() => setStars(1)}
           />
-          {/* two stars */}
           <label htmlFor="two" onMouseEnter={() => setStarHover(2)}>
             {stars >= 2 || starHover >= 2 ? (
               <FillStar size="2rem" />
@@ -50,7 +47,6 @@ const ContactForm = () => {
             className="invisible"
             onChange={() => setStars(2)}
           />
-          {/* three stars */}
           <label htmlFor="three" onMouseEnter={() => setStarHover(3)}>
             {stars >= 3 || starHover >= 3 ? (
               <FillStar size="2rem" />
@@ -65,7 +61,6 @@ const ContactForm = () => {
             className="invisible"
             onChange={() => setStars(3)}
           />
-          {/* Four stars */}
           <label htmlFor="four" onMouseEnter={() => setStarHover(4)}>
             {stars >= 4 || starHover >= 4 ? (
               <FillStar size="2rem" />
@@ -80,7 +75,6 @@ const ContactForm = () => {
             className="invisible"
             onChange={() => setStars(4)}
           />
-          {/* Five */}
           <label htmlFor="five" onMouseEnter={() => setStarHover(5)}>
             {stars >= 5 || starHover >= 5 ? (
               <FillStar size="2rem" />

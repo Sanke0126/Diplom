@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
 import CategoryFilter from "./CategoryFilter";
 import WaveWrap from "../../ui/WaveWrap";
 import MenuGroup from "./menu-group/MenuGroup";
@@ -22,7 +21,6 @@ const SignatureMenu = ({ menuList }) => {
       setMenuItems(filteredItems);
     }
 
-    // Conditionally apply router replace to avoid unnecessary routing
     if (category !== "ALL") {
       router.replace("/#signature");
     }

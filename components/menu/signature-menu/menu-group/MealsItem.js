@@ -23,7 +23,7 @@ const MealsItem = ({ item }) => {
             alt={`Image of ${item.name}`}
             width={150}
             height={150}
-            style={{ width: "100%", height: "auto" }} // Make the image responsive
+            style={{ width: "100%", height: "auto" }}
           />
           <div className="flex justify-end mt-1 sm:hidden w-full translate-y-[5px] h-[36px]">
             <MenuButton

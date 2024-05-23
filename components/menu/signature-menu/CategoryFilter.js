@@ -44,7 +44,6 @@ const CategoryFilter = (props) => {
         <option value="DRINKS">Drinks</option>
       </select>
 
-      {/* filter for tablet and higher */}
       <div className="hidden sm:flex items-center gap-4">
         <button
           onClick={() => changeFilterHandler("ALL")}

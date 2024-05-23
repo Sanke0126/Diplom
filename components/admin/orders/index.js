@@ -18,14 +18,12 @@ const AdminOrders = ({ orderList }) => {
   const updateLoadedOrderList = async () => {
     const res = await axiosBase.get("/api/orders");
     setLoadedOrderList(res.data);
-    // console.log(loadedOrderList);
   };
 
   useEffect(() => {
     const updateOrder = setInterval(() => {
       axiosBase.get(`/api/orders`).then(function (response) {
         setLoadedOrderList(response.data);
-        // console.log(response);
       });
     }, 10000);
 
@@ -35,7 +33,6 @@ const AdminOrders = ({ orderList }) => {
   return (
     <section>
       <div className="flex flex-col h-[92vh] lg:grid lg:grid-cols-3 lg:gap-4">
-        {/* unpaid orders */}
         <div
           className={`${
             viewingOrder === "UNPAID" && "flex-[1]"
@@ -70,8 +67,6 @@ const AdminOrders = ({ orderList }) => {
             ))}
           </ul>
         </div>
-
-        {/* in the kitchen orders */}
         <div
           className={`${
             viewingOrder === "PAID" && "flex-[1]"
@@ -106,8 +101,6 @@ const AdminOrders = ({ orderList }) => {
             ))}
           </ul>
         </div>
-
-        {/* ready to serve orders */}
         <div
           className={`${
             viewingOrder === "COOKED" && "flex-[1]"

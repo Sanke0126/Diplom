@@ -1,13 +1,10 @@
 "use client";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { clearItems } from "../../store/app-state-data/cartSlice";
-
 import CartForm from "./CartForm";
 import CartItems from "./CartItems";
-
 import BagIcon from "../icons/BagIcon";
 import axiosBase from "../../utils/axios-base";
 import LoadingIcon from "../icons/LoadingIcon";

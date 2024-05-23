@@ -81,11 +81,6 @@ const BestSellingItems = ({ bestMeals }) => {
             transitionDuration={1000}
             containerClass="pb-12"
             arrows={true}
-            // keyBoardControl={true}
-            // removeArrowOnDeviceType={["tablet", "mobile"]}
-            // deviceType={this.props.deviceType}
-            // dotListClass="custom-dot-list-style"
-            // itemClass="transition-all duration-300"
           >
             {bestMeals.map((item, index) => (
               <BestSellingItemCard key={index} item={item} />

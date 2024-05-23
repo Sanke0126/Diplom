@@ -1,7 +1,5 @@
 import Image from "next/image";
-
 import MenuButton from "../MenuButton";
-
 import { useSelector } from "react-redux";
 
 const BestSellingItemCard = ({ item }) => {
