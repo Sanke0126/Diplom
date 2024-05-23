@@ -18,14 +18,16 @@ const Cart = ({ restoStatus }) => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   const dispatch = useDispatch();
-  const formatedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString("en-US")}₮`;
+  const formatedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString(
+    "en-US"
+  )}₮`;
 
   const [unsavedChanges, setUnsavedChanges] = useState(true);
   const [customerName, setCustomerName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [table, setTable] = useState("");
-  const [payment, setPayment] = useState("OVO");
+  const [payment, setPayment] = useState("Cash");
   const [proceed, setProceed] = useState(false);
 
   const formFilled =

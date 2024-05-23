@@ -8,13 +8,13 @@ const Reservation = () => {
       id="reservation"
       className="custom-container py-32 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"
     >
-      <div className="hidden lg:block w-full aspect-square mx-auto overflow-hidden">
+      <div className="hidden lg:block w-full aspect-square mx-auto overflow-hidden rounded-[20px]">
         <Image
-          src="/images/reservation/restaurant.jpg"
+          src="/images/reservation/Reserve.jpg"
           alt="Image of Hungray Restaurant"
           width={300}
           height={400}
-          style={{ width: "100%", height: "auto" }}
+          style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center" }}
           className="-translate-y-16"
         />
       </div>

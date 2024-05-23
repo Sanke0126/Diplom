@@ -29,7 +29,7 @@ const MenuButton = (props) => {
           onClick={addItemHandler}
           className="button-sm border-2 border-yellow hover:border-transparent hover:bg-yellow"
         >
-          add
+          Add
         </button>
       )}
       {isExist && (

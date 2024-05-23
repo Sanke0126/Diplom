@@ -94,7 +94,7 @@ const OrderPage = ({ order }) => {
   return (
     <>
       <Head>
-        <title>Hungray | Your order is being proceed</title>
+        <title>Linguine | Your order is being proceed</title>
         <meta name="description" content="Your cart" />
         <meta name="keywords" content="Proceeding your order..." />
         <link rel="icon" href="/favicon.ico" />

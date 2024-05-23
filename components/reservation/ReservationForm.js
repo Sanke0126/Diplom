@@ -1,7 +1,6 @@
 const ReservationForm = () => {
   return (
     <form className="reservation-form shadow-xl py-4 px-6 rounded-2xl border-2 border-slate-100">
-      {/* name - email */}
       <div className="input-group">
         <div className="control-group">
           <label htmlFor="name">Your Name</label>
@@ -24,7 +23,6 @@ const ReservationForm = () => {
           />
         </div>
       </div>
-      {/* phone - table for */}
       <div className="input-group">
         <div className="control-group">
           <label htmlFor="phone">Phone Number</label>
@@ -38,8 +36,8 @@ const ReservationForm = () => {
         </div>
         <div className="control-group">
           <label htmlFor="partySize">Party Size</label>
-          <select name="partySize" id="partySize" required>
-            <option value="" disabled selected hidden>
+          <select name="partySize" id="partySize" required defaultValue="">
+            <option value="" disabled hidden>
               Select party size
             </option>
             {[...Array(12).keys()].map((i) => (
@@ -52,8 +50,8 @@ const ReservationForm = () => {
       </div>
       <div className="control-group">
         <label htmlFor="occasion">Occasion</label>
-        <select name="occasion" id="occasion" required>
-          <option value="" disabled selected hidden>
+        <select name="occasion" id="occasion" required defaultValue="">
+          <option value="" disabled hidden>
             Select occasion
           </option>
           {[
@@ -104,7 +102,6 @@ const ReservationForm = () => {
           placeholder="e.g. I need 2 baby seats"
         />
       </div>
-      {/* button */}
       <div className="w-full flex justify-end mt-4">
         <button className="button bg-yellow">Book Now</button>
       </div>

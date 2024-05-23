@@ -4,7 +4,7 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>Hungray | Page not found</title>
+        <title>Linguine | Page not found</title>
         <meta
           name="description"
           content="Admin dashboard of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
@@ -17,7 +17,7 @@ export default function Custom404() {
       </Head>
       <div className="bg-white h-[70vh] grid place-items-center">
         <h2 className="text-3xl font-bold text-stone-500 tracking-wider">
-          Hungray | 404 page not found
+          Linguine | 404 page not found
         </h2>
       </div>
     </>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Image from "next/image";
 const CategoryFilter = (props) => {
   const { onChangeCategory } = props;
   const [currFilter, setCurrFilter] = useState("ALL");
@@ -18,8 +18,8 @@ const CategoryFilter = (props) => {
     "py-1 px-3 rounded-full hover:bg-yellow hover:shadow-lg transition duration-300";
 
   return (
-    <div className="flex items-center gap-4 my-2 sm:my-4">
-      <h3>Filter by category</h3>
+    <div className="flex items-center gap-4 my-2 sm:my-4 sm:mt-[50px]">
+      <h3 className="text-[18px]">Filter By Category</h3>
 
       {/* //filter for mobile */}
       <select
@@ -58,7 +58,7 @@ const CategoryFilter = (props) => {
         </button>
         <button
           onClick={() => changeFilterHandler("MAIN DISH")}
-          className={`${filterBtnStyle} ${
+          className={`  ${filterBtnStyle} ${
             currFilter === "MAIN DISH"
               ? "bg-yellow shadow-lg"
               : "bg-stone-300 shadow-none"
@@ -68,7 +68,7 @@ const CategoryFilter = (props) => {
         </button>
         <button
           onClick={() => changeFilterHandler("SALAD")}
-          className={`${filterBtnStyle} ${
+          className={` ${filterBtnStyle} ${
             currFilter === "SALAD"
               ? "bg-yellow shadow-lg"
               : "bg-stone-300 shadow-none"
@@ -98,7 +98,7 @@ const CategoryFilter = (props) => {
         </button>
         <button
           onClick={() => changeFilterHandler("HOT DRINK")}
-          style={{ whiteSpace: 'nowrap', textWrap: 'none' }}
+          style={{ whiteSpace: "nowrap", textWrap: "none" }}
           className={`${filterBtnStyle} ${
             currFilter === "HOT DRINK"
               ? "bg-yellow shadow-lg"

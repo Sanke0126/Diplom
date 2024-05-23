@@ -12,7 +12,9 @@ const OrderedDetails = ({ order }) => {
     totalAmount,
   } = order;
 
-  const formattedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString("en-US")}₮`;
+  const formattedTotalAmount = `MNT​​​​​​​​​​​ ${totalAmount.toLocaleString(
+    "en-US"
+  )}₮`;
 
   return (
     <div className="flex flex-col justify-between shadow-xl p-4 md:p-8 rounded-xl w-full lg:w-[500px] border-2 border-stone-100">
@@ -69,13 +71,13 @@ const OrderedDetails = ({ order }) => {
         </div>
         <div className="pt-6 w-full">
           <a
-            href="https://wa.me/6287825979595"
+            href="https://www.facebook.com/messages/t/100003899282380"
             target="_blank"
             rel="noreferrer"
             className="button flex justify-center items-center gap-2 w-full bg-green-700 text-white"
           >
             <WhatsappIcon size={"1.2rem"} />
-            <span>chat admin</span>
+            <span>Chat Admin</span>
           </a>
         </div>
       </div>

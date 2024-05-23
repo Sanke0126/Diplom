@@ -1,5 +1,5 @@
 import React from "react";
-import CreateProduct from "../../components/create/createProduct";
+import CreateProduct from "../../pages/admin/create";
 
 const CreatePage = () => {
   return (

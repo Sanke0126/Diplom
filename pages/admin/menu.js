@@ -93,7 +93,7 @@ const AdminMenuManagerPage = () => {
   return (
     <>
       <Head>
-        <title>Hungray | Manage Menu</title>
+        <title>Linguine | Manage Menu</title>
         <meta
           name="description"
           content="Menu manager of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"

@@ -55,7 +55,7 @@ const OrderStatus = ({ status }) => {
         <p
           className={`${status === "PAID" ? "text-black" : " text-stone-400"}`}
         >
-          your meals is in the kitchen
+          Your meals is in the kitchen
         </p>
         {status !== "UNPAID" && status !== "PAID" && (
           <div className="absolute -top-2 right-12 text-green-700">

@@ -21,7 +21,7 @@ const Proceed = ({ order, expiredDate, onUpdateLoadedOrder }) => {
               <div className="flex flex-col items-center gap-6">
                 <h2 className="text-3xl font-bold">Enjoy your meal!</h2>
                 <Link className="button bg-yellow" href="/">
-                  back to home
+                  Back To Home
                 </Link>
               </div>
             </div>

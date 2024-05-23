@@ -14,7 +14,7 @@ const NavItems = [
   { tag: "Home", link: "/" },
   { tag: "About Us", link: "/#about-us" },
   { tag: "Menu", link: "/#menu" },
-  { tag: "Testimonials", link: "/#testimonials" },
+  { tag: "Feedback", link: "/#feedback" },
   { tag: "Reservation", link: "/#reservation" },
   { tag: "Contact Us", link: "/#contact" },
 ];
@@ -22,6 +22,7 @@ const NavItems = [
 const adminNavItems = [
   { tag: "Orders", link: "/admin/orders" },
   { tag: "Manage Menu", link: "/admin/menu" },
+  { tag: "Create Menu", link: "/admin/create" },
 ];
 
 const Navigation = () => {
@@ -49,7 +50,7 @@ const Navigation = () => {
             className="flex items-center gap-1 pb-2 text-3xl cursor-pointer"
           >
             <UtensilsIcon color="#FFBB44" size={"3vh"} />
-            <span className="font-bold">Hungray</span>
+            <span className="font-bold">Linguine</span>
           </div>
         </Link>
         <ul className="hidden lg:flex justify-end items-center gap-8">

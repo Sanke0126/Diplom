@@ -11,20 +11,20 @@ const Home = () => {
           {/* Main Photo of hero section */}
           <div className="w-full xl:w-[70vh] aspect-square sm:aspect-video lg:aspect-square lg:rounded-tl-[25%] overflow-hidden lg:order-2 lg:place-self-end">
             <Image
-              src="/images/home/header.jpg"
+              src="/background/dinner-table-with-foods-soft-drinks-restaurant.jpg"
               alt="meet and eat together at Hungray Eatery"
-              width={300}
-              height={450}
-              style={{ width: "100%", height: "auto" }}
+              width={400}
+              height={500}
+              style={{ width: "auto", height: "auto" }}
               priority={true}
             />
           </div>
           {/* Main content of hero section */}
           <div className="tracking-tighter py-6 lg:order-1 xl:px-[10vh] 2xl:px-[0vh]">
-            <h1 className="text-4xl lg:text-5xl xl:text-[8vh] xl:leading-[8vh] font-bold mb-4">
+            <h1 className="text-4xl lg:text-5xl xl:text-[9vh] xl:leading-[8vh] font-bold mb-4">
               Meet eat and enjoy the true taste
             </h1>
-            <p>
+            <p className="text-[16px]">
               we serve the best and the most fresh food exist in the town. Lorem
               ipsum dolor sit, amet consectetur adipisicing elit. Sequi, facere.
             </p>

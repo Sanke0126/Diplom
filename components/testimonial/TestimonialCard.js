@@ -1,6 +1,6 @@
 import Stars from "./Stars";
 import TimeIcon from "../icons/TimeIcon";
-
+import Image from "next/image";
 const TestimonialCard = ({ item }) => {
   const date = new Date(item.createdAt);
   const formatedHours = ("0" + date.getHours()).slice(-2);
@@ -15,7 +15,12 @@ const TestimonialCard = ({ item }) => {
     <div className="flex flex-col justify-between gap-4 shadow-xl h-full p-4 bg-stone-50 border-2 border-stone-100 w-[350px] rounded-xl">
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
-          <div className="h-full aspect-square bg-stone-300 rounded-full" />
+          <Image
+            className="h-full aspect-square bg-stone-300 rounded-full"
+            src={item.image}
+            width={50}
+            height={50}
+          />
           <div>
             <h3 className="font-bold text-2xl">{item.name}</h3>
             <Stars num={item.stars} />

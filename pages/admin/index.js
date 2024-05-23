@@ -40,7 +40,7 @@ const AdminPage = ({ orderList, restoStatus }) => {
     return (
       <>
         <Head>
-          <title>Hungray | Admin Dashboard</title>
+          <title>Linguine | Admin Dashboard</title>
           <meta
             name="description"
             content="Admin dashboard of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"

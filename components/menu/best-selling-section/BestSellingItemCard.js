@@ -28,7 +28,7 @@ const BestSellingItemCard = ({ item }) => {
         <h3 className="text-xl font-bold">{item.name}</h3>
         <p>{item.desc}</p>
         <div className="mt-4 flex justify-between items-start">
-          <p className="font-semibold">{formatedPrice}</p>
+          <p className="font-semibold mt-[5px]">{formatedPrice}</p>
           <MenuButton
             mealName={item.name}
             price={item.price}

@@ -8,7 +8,7 @@ export default function CartPage({ restoStatus }) {
   return (
     <>
       <Head>
-        <title>Hungray | Cart</title>
+        <title>Linguine | Cart</title>
         <meta name="description" content="Your cart" />
         <meta
           name="keywords"

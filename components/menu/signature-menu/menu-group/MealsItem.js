@@ -5,7 +5,7 @@ import BestSeller from "./BestSeller";
 import Recommended from "./Recommended";
 
 const MealsItem = ({ item }) => {
-  const formattedPrice = `MNT​​​​​​​​​​​ ${item.price.toLocaleString(
+  const formattedPrice = `MNT​​​​​​​​​​​ ${item.price.toLocaleString(
     "id-ID"
   )}₮`;
   const cartItems = useSelector((state) => state.cart.items);
@@ -23,7 +23,7 @@ const MealsItem = ({ item }) => {
             alt={`Image of ${item.name}`}
             width={150}
             height={150}
-            layout="responsive"
+            style={{ width: "100%", height: "auto" }} // Make the image responsive
           />
           <div className="flex justify-end mt-1 sm:hidden w-full translate-y-[5px] h-[36px]">
             <MenuButton

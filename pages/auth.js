@@ -5,7 +5,7 @@ const AuthPage = () => {
   return (
     <>
       <Head>
-        <title>Hungray | Authentication required</title>
+        <title>Linguine | Authentication required</title>
         <meta
           name="description"
           content="Admin dashboard authentication of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"

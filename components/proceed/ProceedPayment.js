@@ -43,7 +43,7 @@ const ProceedPayment = ({
             {payment !== "Cash" && (
               <>
                 <h3>Transfer to</h3>
-                <h2 className="text-xl font-bold">{`${payment} - Gema Refantero`}</h2>
+                <h2 className="text-xl font-bold">{`${payment}`}</h2>
               </>
             )}
             {payment === "Cash" && (
@@ -64,14 +64,15 @@ const ProceedPayment = ({
             onClick={cancelOrderHandler}
             className="button bg-red-600 text-white"
           >
-            cancel order
+            Cancel Order
           </button>
         </div>
         {payment !== "Cash" && (
           <div>
             <Image
-              src={`/images/proceed/${payment.toLowerCase()}.jpeg`}
-              alt={`QRIS of ${payment}`}
+            className="mr-[70px]"
+              src={`/images/proceed/${payment.toLowerCase()}.png`}
+              alt={`${payment}`}
               width={300}
               height={300}
             />
