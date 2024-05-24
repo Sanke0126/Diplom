@@ -28,7 +28,7 @@ const RestoStatus = ({ numOrdered, restoStatus }) => {
   return (
     <div className="flex flex-col gap-4 w-full lg:w-[400px] shadow-xl py-4 px-6 border-2 border-stone-100 rounded-xl">
       <div>
-        <h2 className="text-3xl font-bold">Hungray</h2>
+        <h2 className="text-3xl font-bold">Linguine</h2>
         <h5>Meet eat and taste the real taste</h5>
       </div>
 

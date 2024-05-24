@@ -28,15 +28,15 @@ const OrderItem = ({ item, updateList }) => {
     <div className="mb-6 border-b-2 border-stone-100 pb-2">
       <div className="w-full activity-table grid grid-cols-2 lg:grid-cols-3 justify-start justify-items-start items-start gap-1 lg:gap-x-6">
         <div className="flex flex-col justify-start col-span-2">
-          <h5>orderID</h5>
+          <h5>OrderID</h5>
           <h6 className="">{item._id}</h6>
         </div>
         <div className="flex flex-col justify-start">
-          <h5>name</h5>
+          <h5>Name</h5>
           <h6 className="">{item.name}</h6>
         </div>
         <div className="flex flex-col justify-start">
-          <h5>phone</h5>
+          <h5>Phone</h5>
           <h6 className="">{item.phone}</h6>
         </div>
         <div className="flex flex-col justify-start">
@@ -54,7 +54,7 @@ const OrderItem = ({ item, updateList }) => {
             onClick={() => setSeeDetails((prev) => !prev)}
             className="text-blue-600"
           >
-            see details
+            See Details
           </button>
         </div>
       )}
@@ -79,7 +79,7 @@ const OrderItem = ({ item, updateList }) => {
             onClick={() => setSeeDetails((prev) => !prev)}
             className="mt-4 text-blue-600"
           >
-            hide details
+            Hide Details
           </button>
         </div>
       )}
@@ -89,10 +89,10 @@ const OrderItem = ({ item, updateList }) => {
           className="button-sm bg-blue-600 text-white"
         >
           {item.orderStatus === "UNPAID"
-            ? "confirm payment"
+            ? "Confirm Payment"
             : item.orderStatus === "PAID"
-            ? "meals ready"
-            : item.orderStatus === "COOKED" && "complete order"}
+            ? "Meals Ready"
+            : item.orderStatus === "COOKED" && "Complete Order"}
         </button>
       </div>
     </div>

@@ -7,7 +7,7 @@ const ContactContent = () => {
   return (
     <div className="custom-container flex flex-col gap-6 w-[300px]">
       <div>
-        <h2 className="font-bold text-4xl w-[80%] lg:w-full">Contact Us</h2>
+        <h2 className="font-bold text-4xl w-[80%] lg:w-full mb-[16px]">Contact Us</h2>
         <p className="text-sm">
           If you would like to talk about your upcoming event, please feel free
           to contact us anytime

@@ -101,7 +101,9 @@ const CreateProduct = ({ selectedCategory }) => {
   return (
     <form className="flex flex-col gap-4 items-center" onSubmit={handleSubmit}>
       {error && <p className="text-red-500">{error}</p>}
+      <h1 className="font-bold text-[25px] mt-[15px]">Create a New Product</h1>
       <select
+        className="w-[200px] rounded-[10px] border-yellow border-2"
         name="category"
         value={product.category}
         onChange={handleChange}
@@ -124,6 +126,7 @@ const CreateProduct = ({ selectedCategory }) => {
         <option value="DRINKS">Drinks</option>
       </select>
       <input
+        className="w-[250px] rounded-[10px] border-yellow border-2"
         type="text"
         name="name"
         value={product.name}
@@ -132,6 +135,7 @@ const CreateProduct = ({ selectedCategory }) => {
         required
       />
       <textarea
+        className="w-[250px] rounded-[10px] border-yellow border-2"
         name="desc"
         value={product.desc}
         onChange={handleChange}
@@ -139,6 +143,7 @@ const CreateProduct = ({ selectedCategory }) => {
         required
       />
       <input
+        className="w-[250px] rounded-[10px] border-yellow border-2"
         type="number"
         name="price"
         value={product.price}
@@ -146,7 +151,7 @@ const CreateProduct = ({ selectedCategory }) => {
         placeholder="Price"
         required
       />
-      <label>
+      <label className="flex items-center gap-[10px] justify-start w-[250px]">
         Best Seller:
         <input
           type="checkbox"
@@ -155,7 +160,7 @@ const CreateProduct = ({ selectedCategory }) => {
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label className="flex items-center gap-[10px] justify-start w-[250px]">
         Recommended:
         <input
           type="checkbox"
@@ -164,8 +169,19 @@ const CreateProduct = ({ selectedCategory }) => {
           onChange={handleChange}
         />
       </label>
-      <input type="file" name="image" onChange={fileSelectHandle} required />
-      <button type="submit">Create Product</button>
+      <input
+        className="w-[250px]"
+        type="file"
+        name="image"
+        onChange={fileSelectHandle}
+        required
+      />
+      <button
+        className="w-[200px] h-[40px] bg-yellow rounded-[10px]"
+        type="submit"
+      >
+        Create Product
+      </button>
       {success && <p>Product created successfully!</p>}
     </form>
   );

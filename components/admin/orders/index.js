@@ -77,7 +77,7 @@ const AdminOrders = ({ orderList }) => {
             className="cursor-pointer text-center p-4 bg-gradient-to-b from-light-yellow via-light-yellow to-white border-t-[1px] border-yellow"
           >
             <div className="custom-container">
-              <h2 className="font-semibold tracking-wider">In the kitchen</h2>
+              <h2 className="font-semibold tracking-wider">In The Kitchen</h2>
             </div>
           </div>
           {viewingOrder === "PAID" && (

@@ -19,11 +19,11 @@ const Home = () => {
             />
           </div>
           <div className="tracking-tighter py-6 lg:order-1 xl:px-[10vh] 2xl:px-[0vh]">
-            <h1 className="text-4xl lg:text-5xl xl:text-[9vh] xl:leading-[8vh] font-bold mb-4">
+            <h1 className="text-4xl lg:text-5xl xl:text-[9vh] xl:leading-[100%] font-bold mb-4">
               Meet eat and enjoy the true taste
             </h1>
-            <p className="text-[16px]">
-              we serve the best and the most fresh food exist in the town. Lorem
+            <p className="text-[16px] text-[#666666] mt-[20px] mb-[30px]">
+              We serve the best and the most fresh food exist in the town. Lorem
               ipsum dolor sit, amet consectetur adipisicing elit. Sequi, facere.
             </p>
             <div className="flex flex-wrap justify-start items-center gap-x-4 gap-y-2 mt-4 -ml-1">

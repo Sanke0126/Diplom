@@ -2,7 +2,7 @@ import PhoneCallIcon from "../icons/PhoneIcon";
 
 const CallUs = ({ phoneNumber }) => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 mb-[8px]">
       <PhoneCallIcon
         size="2.5rem"
         className="h-full bg-yellow aspect-square rounded-full p-2 shadow-xl"
