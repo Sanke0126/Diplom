@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AboutCard from "./AboutCard";
 const About = () => {
   return (

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 const CategoryFilter = (props) => {
   const { onChangeCategory } = props;
   const [currFilter, setCurrFilter] = useState("ALL");

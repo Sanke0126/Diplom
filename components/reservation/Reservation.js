@@ -11,10 +11,15 @@ const Reservation = () => {
       <div className="hidden lg:block w-full aspect-square mx-auto overflow-hidden rounded-[20px]">
         <Image
           src="/images/reservation/Reserve.jpg"
-          alt="Image of Linguine Restaurant"
+          alt="Reserve image of Linguine Restaurant"
           width={300}
           height={400}
-          style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center" }}
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
           className="-translate-y-16"
         />
       </div>

@@ -3,9 +3,7 @@ import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
-
 import { Squash as Hamburger } from "hamburger-react";
-
 import NavigationMobile from "./mobile-navigation/NavigationMobile";
 import UtensilsIcon from "../icons/Utensils";
 import BagIcon from "../icons/BagIcon";
@@ -58,7 +56,6 @@ const Navigation = () => {
           {/* links for admin page */}
           {pathName.substring(0, 6) === "/admin" &&
             adminNavItems.map((item, index) => (
-              
               <li
                 key={index}
                 className={`cursor-pointer mx-2 font-semibold transition duration-300 border-b-2 py-2 hover:text-black hover:border-yellow ${

@@ -17,6 +17,7 @@ const TestimonialCard = ({ item }) => {
         <div className="flex gap-2">
           <Image
             className="h-full aspect-square bg-stone-300 rounded-full"
+            alt="image of reviewer"
             src={item.image}
             width={50}
             height={50}
