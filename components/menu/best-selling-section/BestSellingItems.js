@@ -54,15 +54,14 @@ const BestSellingItems = ({ bestMeals }) => {
     <section id="menu" className="bg-white py-12 lg:py-40">
       <div className="custom-container flex flex-col lg:grid lg:grid-cols-6 gap-6 items-center">
         <div className="lg:col-span-2 flex flex-col gap-4 items-start">
-          <h2 className="font-bold text-[55px] w-[410px]">Our Best Selling</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consectetur quod fugit debitis reprehenderit culpa alias in
-            voluptate voluptatem labore ab!
+          <h2 className="font-bold text-[55px] w-[410px]">Нэрийн хоол</h2>
+          <p className="text-justify">
+            Лингвини рестораны нэрийн хоол болон үйлчлүүлэгчдийн маань сэтгэлд
+            нийцэн, хамгийн их захиалагддаг хоолнуудаас танилцуулж байна.Та амтархан зооглоорой.
           </p>
           <Link href={"/#signature"}>
             <button className="hidden lg:block button bg-yellow text-[18px]">
-              See all available meals
+              Бүх хоол үзэх
             </button>
           </Link>
         </div>

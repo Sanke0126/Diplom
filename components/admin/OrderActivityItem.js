@@ -17,23 +17,23 @@ const OrderActivityItem = ({ item }) => {
     <div className="mb-6 border-b-2 border-stone-100 pb-2">
       <div className="w-full activity-table grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 lg:gap-x-6">
         <div className="flex flex-col xl:flex-row xl:items-center xl:gap-4 justify-start col-span-2 xl:col-span-4">
-          <h5>OrderID</h5>
+          <h5>ЗахиалгынID</h5>
           <h6 className="xl:mt-1">{item._id}</h6>
         </div>
         <div className="flex flex-col justify-start">
-          <h5>Name</h5>
+          <h5>Нэр</h5>
           <h6>{item.name}</h6>
         </div>
         <div className="flex flex-col justify-start">
-          <h5>Email</h5>
+          <h5>Эмайл</h5>
           <h6>{item.email}</h6>
         </div>
         <div className="flex flex-col justify-start ml-[50px]">
-          <h5>Order Amount</h5>
+          <h5>Хэмжээ</h5>
           <h6>{item.orderedMeals.length}</h6>
         </div>
         <div className="flex flex-col justify-start">
-          <h5>Order Made</h5>
+          <h5>Захиалсан огноо</h5>
           <h6>{createdAt}</h6>
         </div>
       </div>
@@ -64,7 +64,7 @@ const OrderActivityItem = ({ item }) => {
             </div>
           ))}
           <div className="flex justify-between font-semibold mt-4">
-            <h5>Total price</h5>
+            <h5>Нийт үнийн дүн</h5>
             <h5>{`MNT ${item.totalAmount.toLocaleString("en-US")}₮`}</h5>
           </div>
           <button

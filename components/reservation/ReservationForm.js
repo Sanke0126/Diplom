@@ -1,44 +1,112 @@
+import { useState } from "react";
+
 const ReservationForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    partySize: "",
+    occasion: "",
+    date: "",
+    time: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("/api/reserve", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        alert("Reservation successful!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          partySize: "",
+          occasion: "",
+          date: "",
+          time: "",
+          message: "",
+        });
+      } else {
+        alert("Error making reservation. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error making reservation. Please try again.");
+    }
+  };
+
   return (
-    <form className="reservation-form shadow-xl py-4 px-6 rounded-2xl border-2 border-slate-100">
+    <form
+      className="reservation-form shadow-xl py-4 px-6 rounded-2xl border-2 border-slate-100"
+      onSubmit={handleSubmit}
+    >
+      {/* (Form fields with onChange attribute to handle input changes) */}
       <div className="input-group">
         <div className="control-group">
-          <label htmlFor="name">Your Name</label>
+          <label htmlFor="name">Нэр</label>
           <input
             type="text"
             name="name"
             id="name"
             required
             placeholder="Naranbaatar"
+            value={formData.name}
+            onChange={handleChange}
           />
         </div>
         <div className="control-group">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email">Эмайл</label>
           <input
             type="email"
             name="email"
             id="email"
             required
             placeholder="********@example.com"
+            value={formData.email}
+            onChange={handleChange}
           />
         </div>
       </div>
       <div className="input-group">
         <div className="control-group">
-          <label htmlFor="phone">Phone Number</label>
+          <label htmlFor="phone">Утасны дугаар</label>
           <input
             type="text"
             name="phone"
             id="phone"
             required
             placeholder="+976 ********"
+            value={formData.phone}
+            onChange={handleChange}
           />
         </div>
         <div className="control-group">
-          <label htmlFor="partySize">Party Size</label>
-          <select name="partySize" id="partySize" required defaultValue="">
+          <label htmlFor="partySize">Хүний тоо</label>
+          <select
+            name="partySize"
+            id="partySize"
+            required
+            value={formData.partySize}
+            onChange={handleChange}
+          >
             <option value="" disabled hidden>
-              Select party size
+              Хүний тоог сонгоно уу
             </option>
             {[...Array(12).keys()].map((i) => (
               <option key={i + 1} value={i + 1}>
@@ -49,10 +117,16 @@ const ReservationForm = () => {
         </div>
       </div>
       <div className="control-group">
-        <label htmlFor="occasion">Occasion</label>
-        <select name="occasion" id="occasion" required defaultValue="">
+        <label htmlFor="occasion">Тусгай үйл явдал</label>
+        <select
+          name="occasion"
+          id="occasion"
+          required
+          value={formData.occasion}
+          onChange={handleChange}
+        >
           <option value="" disabled hidden>
-            Select occasion
+            Үйл явдлыг сонгоно уу
           </option>
           {[
             "Dinner",
@@ -74,14 +148,20 @@ const ReservationForm = () => {
           ))}
         </select>
       </div>
-
       <div className="input-group">
         <div className="control-group">
-          <label htmlFor="date">Select Date</label>
-          <input type="date" name="date" id="date" required />
+          <label htmlFor="date">Огноог сонгоно уу</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            required
+            value={formData.date}
+            onChange={handleChange}
+          />
         </div>
         <div className="control-group">
-          <label htmlFor="time">Select Time</label>
+          <label htmlFor="time">Цагийг сонгоно уу</label>
           <input
             type="time"
             name="time"
@@ -89,21 +169,25 @@ const ReservationForm = () => {
             min="10:00:00"
             max="22:00:00"
             required
+            value={formData.time}
+            onChange={handleChange}
           />
         </div>
       </div>
       <div className="control-group">
-        <label htmlFor="message">Any special request?</label>
+        <label htmlFor="message">Тусгай хүсэлт байгаа юу?</label>
         <textarea
           name="message"
           id="message"
           cols="30"
           rows="3"
-          placeholder="e.g. I need 2 baby seats"
-        />
+          placeholder="2 хүүхдийн суудал"
+          value={formData.message}
+          onChange={handleChange}
+        ></textarea>
       </div>
       <div className="w-full flex justify-end mt-4">
-        <button className="button bg-yellow">Book Now</button>
+        <button className="button bg-yellow">Захиалах</button>
       </div>
     </form>
   );

@@ -35,7 +35,7 @@ export default function HomePage({ menuList }) {
         <title>Linguine | your best resto in town</title>
         <meta
           name="description"
-          content="Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
+          content="Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
         />
         <meta
           name="keywords"

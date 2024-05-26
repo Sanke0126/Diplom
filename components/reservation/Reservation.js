@@ -11,7 +11,7 @@ const Reservation = () => {
       <div className="hidden lg:block w-full aspect-square mx-auto overflow-hidden rounded-[20px]">
         <Image
           src="/images/reservation/Reserve.jpg"
-          alt="Image of Hungray Restaurant"
+          alt="Image of Linguine Restaurant"
           width={300}
           height={400}
           style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center" }}
@@ -19,7 +19,7 @@ const Reservation = () => {
         />
       </div>
       <div className="bg-white">
-        <h2 className="font-bold text-4xl w-[80%] mb-4">Reserve a Table</h2>
+        <h2 className="font-bold text-4xl w-[80%] mb-4">Ширээ захиалах</h2>
         <ReservationForm />
       </div>
     </section>

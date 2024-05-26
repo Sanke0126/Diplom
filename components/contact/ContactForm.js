@@ -8,13 +8,13 @@ const ContactForm = () => {
 
   return (
     <div className="shadow-xl py-4 px-8 col-span-2 w-full">
-      <h2 className="font-bold text-4xl mb-6">Send some feedback!</h2>
+      <h2 className="font-bold text-4xl mb-6">Санал хүсэлтээ илгээнэ үү!</h2>
       <form>
         <div className="control-group">
-          <label htmlFor="name">Your Name</label>
+          <label htmlFor="name">Таны нэр</label>
           <input type="text" name="name" id="name" />
         </div>
-        <h3 className="mb-2">How would you rate Hungray?</h3>
+        <h3 className="mb-2">Лингвини рестораныг та хэрхэн үнэлэх вэ?</h3>
         <div
           onMouseLeave={() => setStarHover(0)}
           className="flex text-yellow mb-4 w-min"
@@ -91,11 +91,11 @@ const ContactForm = () => {
           />
         </div>
         <div className="control-group">
-          <label htmlFor="feedback">Your Feedback</label>
+          <label htmlFor="feedback">Санал хүсэлт</label>
           <textarea name="feedback" id="feedback" cols="30" rows="3"></textarea>
         </div>
         <div className="flex justify-end w-full py-4">
-          <button className="button bg-yellow">Send To Feedback</button>
+          <button className="button bg-yellow">Санал хүсэлт илгээх</button>
         </div>
       </form>
     </div>

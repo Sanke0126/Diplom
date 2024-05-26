@@ -36,7 +36,7 @@ const OrderStatus = ({ status }) => {
         className={`relative flex flex-col items-center text-center leading-5 ${paymentStyle}`}
       >
         <PaymentIcon size={"2rem"} />
-        <p className={`text-black`}>confirming your payment</p>
+        <p className={`text-black`}>Төлбөр баталгаажуулах</p>
         {status !== "UNPAID" && (
           <div className="absolute -top-2 right-12 text-green-700">
             <CheckedIcon size={"1.2rem"} />
@@ -55,7 +55,7 @@ const OrderStatus = ({ status }) => {
         <p
           className={`${status === "PAID" ? "text-black" : " text-stone-400"}`}
         >
-          Your meals is in the kitchen
+          Таны хоол бэлтгэгдэж байна
         </p>
         {status !== "UNPAID" && status !== "PAID" && (
           <div className="absolute -top-2 right-12 text-green-700">
@@ -72,7 +72,7 @@ const OrderStatus = ({ status }) => {
         className={`relative flex flex-col items-center text-center leading-5 ${servingStyle}`}
       >
         <ServingIcon size={"2rem"} />
-        <p>Your meals is in coming</p>
+        <p>Таны захиалга бэлэн болсон</p>
         {status === "SERVED" && (
           <div className="absolute -top-2 right-12 text-green-700">
             <CheckedIcon size={"1.2rem"} />

@@ -8,7 +8,7 @@ const AuthPage = () => {
         <title>Linguine | Authentication required</title>
         <meta
           name="description"
-          content="Admin dashboard authentication of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
+          content="Admin dashboard authentication of Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
         />
         <meta
           name="keywords"

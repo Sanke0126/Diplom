@@ -8,7 +8,7 @@ const CallUs = ({ phoneNumber }) => {
         className="h-full bg-yellow aspect-square rounded-full p-2 shadow-xl"
       />
       <div>
-        <h6 className="text-xs">Call us</h6>
+        <h6 className="text-xs">Холбоо барих</h6>
         <h6>{phoneNumber}</h6>
       </div>
     </div>

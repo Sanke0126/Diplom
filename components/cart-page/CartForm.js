@@ -17,7 +17,7 @@ const CartForm = (props) => {
       <div>
         <div className="input-group">
           <div className="control-group">
-            <label htmlFor="name">Your Name</label>
+            <label htmlFor="name">Таны нэр</label>
             <input
               type="text"
               name="name"
@@ -29,7 +29,7 @@ const CartForm = (props) => {
             />
           </div>
           <div className="control-group">
-            <label htmlFor="email">Email (optional)</label>
+            <label htmlFor="email">Эмайл</label>
             <input
               type="email"
               name="email"
@@ -42,7 +42,7 @@ const CartForm = (props) => {
         </div>
         <div className="input-group">
           <div className="control-group">
-            <label htmlFor="phone">Phone Number</label>
+            <label htmlFor="phone">Утасны дугаар</label>
             <input
               type="text"
               name="phone"
@@ -54,7 +54,7 @@ const CartForm = (props) => {
             />
           </div>
           <div className="control-group">
-            <label htmlFor="table">Table Number</label>
+            <label htmlFor="table">Ширээний дугаар</label>
             <select
               name="table"
               id="table"
@@ -76,19 +76,19 @@ const CartForm = (props) => {
       </div>
       <div>
         <div className="control-group">
-          <label htmlFor="payment">Payment Method</label>
+          <label htmlFor="payment">Төлбөрийн төрөл</label>
           <select
             name="payment"
             id="payment"
             defaultValue={payment}
             onChange={(e) => onChangePayment(e.target.value)}
           >
-            <option value="Cash">Pay Cash</option>
+            <option value="Cash">Бэлнээр</option>
             <option value="Qpay">Qpay</option>
           </select>
         </div>
         <div>
-          <button className="button bg-yellow w-full">order</button>
+          <button className="button bg-yellow w-full">Захиалах</button>
         </div>
       </div>
     </div>

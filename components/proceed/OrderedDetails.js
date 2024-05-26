@@ -22,27 +22,27 @@ const OrderedDetails = ({ order }) => {
         <table className="text-left">
           <tbody>
             <tr>
-              <th className="font-semibold">Ordered for</th>
+              <th className="font-semibold">Захиалсан хүний нэр</th>
               <td>{`: ${name}`}</td>
             </tr>
             <tr>
-              <th className="font-semibold">Table Number</th>
+              <th className="font-semibold">Ширээний дугаар</th>
               <td>{`: ${table}`}</td>
             </tr>
             <tr>
-              <th className="font-semibold">Email</th>
+              <th className="font-semibold">Эмайл</th>
               <td>{`: ${email}`}</td>
             </tr>
             <tr>
-              <th className="font-semibold">Phone</th>
+              <th className="font-semibold">Утасны дугаар</th>
               <td>{`: ${phone}`}</td>
             </tr>
             <tr>
-              <th className="font-semibold">Payment Method</th>
+              <th className="font-semibold">Төлбөрийн төрөл</th>
               <td>{`: ${payment}`}</td>
             </tr>
             <tr>
-              <th className="font-semibold">Order status</th>
+              <th className="font-semibold">Захиалгын төлөв</th>
               <td>{`: ${orderStatus.toLowerCase()}`}</td>
             </tr>
           </tbody>
@@ -66,7 +66,7 @@ const OrderedDetails = ({ order }) => {
       </div>
       <div>
         <div className="flex justify-between pt-6 text-lg font-semibold">
-          <h2>Total Price</h2>
+          <h2>Нийт төлбөр</h2>
           <h2>{formattedTotalAmount}</h2>
         </div>
         <div className="pt-6 w-full">
@@ -77,7 +77,7 @@ const OrderedDetails = ({ order }) => {
             className="button flex justify-center items-center gap-2 w-full bg-green-700 text-white"
           >
             <WhatsappIcon size={"1.2rem"} />
-            <span>Chat Admin</span>
+            <span>Админтай холбогдох</span>
           </a>
         </div>
       </div>

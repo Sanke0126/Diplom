@@ -39,10 +39,10 @@ const AdminOrdersPage = ({ orderList }) => {
     return (
       <>
         <Head>
-          <title>Hungray | Orders</title>
+          <title>Linguine | Orders</title>
           <meta
             name="description"
-            content="Admin dashboard order monitoring of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
+            content="Admin dashboard order monitoring of Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
           />
           <meta
             name="keywords"

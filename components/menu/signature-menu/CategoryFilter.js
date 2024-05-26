@@ -18,8 +18,8 @@ const CategoryFilter = (props) => {
     "py-1 px-3 rounded-full hover:bg-yellow hover:shadow-lg transition duration-300";
 
   return (
-    <div className="flex items-center gap-4 my-2 sm:my-4 sm:mt-[50px]">
-      <h3 className="text-[18px]">Filter By Category</h3>
+    <div className="flex items-center my-2 sm:gap-0 gap-10 sm:my-4 sm:mt-[50px] mt-[30px]">
+      <h3 className="text-[18px] text-center font-semibold">Ангилалаар шүүх</h3>
 
       {/* //filter for mobile */}
       <select
@@ -29,19 +29,17 @@ const CategoryFilter = (props) => {
         defaultValue={"ALL"}
         onChange={filterCategoryHandler}
       >
-        <option value="ALL">All</option>
-        <option value="MAIN DISH">Main Dish</option>
-        <option value="SALAD">Salad</option>
-        <option value="SOUP">Ramen</option>
-        <option value="MONGOLIAN">Mongolian food</option>
-        <option value="GRILLED">Grilled food</option>
-        <option value="HOT DRINK">Hot drink</option>
-        <option value="ADDITIONAL">Additional side dish</option>
-        <option value="DESSERT">Dessert</option>
-        <option value="PIZZA">Pizza</option>
-        <option value="ALCOHOL">Alcohol</option>
-        <option value="WINE">Wine</option>
-        <option value="DRINKS">Drinks</option>
+        <option value="ALL">Бүх</option>
+        <option value="MAIN DISH">Үндсэн</option>
+        <option value="SALAD">Салат</option>
+        <option value="MONGOLIAN">Монгол</option>
+        <option value="GRILLED">Гриллдсэн</option>
+        <option value="HOT DRINK">Халуун уух зүйлс</option>
+        <option value="ADDITIONAL">Хачир</option>
+        <option value="DESSERT">Дессэрт</option>
+        <option value="PIZZA">Пицца</option>
+        <option value="ALCOHOL">Алкахол</option>
+        <option value="DRINKS">Уух зүйлс</option>
       </select>
 
       <div className="hidden sm:flex items-center gap-4">
@@ -53,7 +51,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          All
+          Бүх
         </button>
         <button
           onClick={() => changeFilterHandler("MAIN DISH")}
@@ -63,7 +61,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Main
+          Үндсэн
         </button>
         <button
           onClick={() => changeFilterHandler("SALAD")}
@@ -73,7 +71,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Salad
+          Салат
         </button>
         <button
           onClick={() => changeFilterHandler("MONGOLIAN")}
@@ -83,7 +81,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Mongolian
+          Монгол
         </button>
         <button
           onClick={() => changeFilterHandler("GRILLED")}
@@ -93,7 +91,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Grilled
+          Гриллдсэн
         </button>
         <button
           onClick={() => changeFilterHandler("HOT DRINK")}
@@ -104,7 +102,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           } `}
         >
-          Hot Drinks
+          Халуун уух зүйл
         </button>
         <button
           onClick={() => changeFilterHandler("ADDITIONAL")}
@@ -114,7 +112,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Additional
+          Хачир
         </button>
         <button
           onClick={() => changeFilterHandler("DESSERT")}
@@ -124,7 +122,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Dessert
+          Дессэрт
         </button>
         <button
           onClick={() => changeFilterHandler("PIZZA")}
@@ -134,7 +132,7 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Pizza
+          Пицца
         </button>
         <button
           onClick={() => changeFilterHandler("ALCOHOL")}
@@ -144,17 +142,18 @@ const CategoryFilter = (props) => {
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Alcohol
+          Алкахол
         </button>
         <button
           onClick={() => changeFilterHandler("DRINKS")}
+          style={{ whiteSpace: "nowrap", textWrap: "none" }}
           className={`${filterBtnStyle} ${
             currFilter === "DRINKS"
               ? "bg-yellow shadow-lg"
               : "bg-stone-300 shadow-none"
           }`}
         >
-          Drinks
+          Уух зүйл
         </button>
       </div>
     </div>

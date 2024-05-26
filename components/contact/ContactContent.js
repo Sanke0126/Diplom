@@ -7,15 +7,17 @@ const ContactContent = () => {
   return (
     <div className="custom-container flex flex-col gap-6 w-[300px]">
       <div>
-        <h2 className="font-bold text-4xl w-[80%] lg:w-full mb-[16px]">Contact Us</h2>
+        <h2 className="font-bold text-4xl w-[80%] lg:w-full mb-[16px]">
+          Бидэнтэй холбогдох
+        </h2>
         <p className="text-sm">
-          If you would like to talk about your upcoming event, please feel free
-          to contact us anytime
+          Хэрэв та удахгүй болох үйл явдлынхаа талаар ярилцахыг хүсвэл, хүссэн
+          үедээ бидэнтэй холбоо барина уу.
         </p>
       </div>
       <div>
-        <h3 className="font-semibold">Ulaanbaatar, Mongolia</h3>
-        <h5>Chingeltei District, Indra Cyber Institute</h5>
+        <h3 className="font-semibold">Улаанбаатар, Монгол</h3>
+        <h5>Чингэлтэй дүүрэг, Индра кибер институт</h5>
       </div>
       <div className="flex flex-col gap-4">
         {["+976 75555555", "+976 90840126"].map((num, index) => (
@@ -24,7 +26,7 @@ const ContactContent = () => {
       </div>
       <div>
         <h3 className="uppercase font-semibold mb-4 text-xl tracking-wide">
-          Socials
+          Сошиал хаяг
         </h3>
         <div className="flex gap-4">
           <TwitterIcon

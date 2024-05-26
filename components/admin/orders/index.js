@@ -43,7 +43,7 @@ const AdminOrders = ({ orderList }) => {
             className="cursor-pointer  text-center p-4 bg-gradient-to-b from-light-yellow via-light-yellow to-white border-t-[1px] border-yellow"
           >
             <div className="custom-container">
-              <h2 className="font-semibold tracking-wider">Unpaid Orders</h2>
+              <h2 className="font-semibold tracking-wider">Төлбөр төлөгдөөгүй захиалгууд</h2>
             </div>
           </div>
           {viewingOrder === "UNPAID" && (
@@ -77,7 +77,7 @@ const AdminOrders = ({ orderList }) => {
             className="cursor-pointer text-center p-4 bg-gradient-to-b from-light-yellow via-light-yellow to-white border-t-[1px] border-yellow"
           >
             <div className="custom-container">
-              <h2 className="font-semibold tracking-wider">In The Kitchen</h2>
+              <h2 className="font-semibold tracking-wider">Хоол хийгдэж байгаа</h2>
             </div>
           </div>
           {viewingOrder === "PAID" && (
@@ -111,7 +111,7 @@ const AdminOrders = ({ orderList }) => {
             className="cursor-pointer  text-center p-4 bg-gradient-to-b from-light-yellow via-light-yellow to-white border-t-[1px] border-yellow"
           >
             <div className="custom-container">
-              <h2 className="font-semibold tracking-wider">Ready to serve</h2>
+              <h2 className="font-semibold tracking-wider">Гарахад бэлэн болсон</h2>
             </div>
           </div>
           {viewingOrder === "COOKED" && (

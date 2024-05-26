@@ -11,18 +11,19 @@ import UtensilsIcon from "../icons/Utensils";
 import BagIcon from "../icons/BagIcon";
 
 const NavItems = [
-  { tag: "Home", link: "/" },
-  { tag: "About Us", link: "/#about-us" },
-  { tag: "Menu", link: "/#menu" },
-  { tag: "Feedback", link: "/#feedback" },
-  { tag: "Reservation", link: "/#reservation" },
-  { tag: "Contact Us", link: "/#contact" },
+  { tag: "Нүүр", link: "/" },
+  { tag: "Бидний тухай", link: "/#about-us" },
+  { tag: "Цэс", link: "/#menu" },
+  { tag: "Санал хүсэлт", link: "/#feedback" },
+  { tag: "Захиалга", link: "/#reservation" },
+  { tag: "Холбоо барих", link: "/#contact" },
 ];
 
 const adminNavItems = [
-  { tag: "Orders", link: "/admin/orders" },
-  { tag: "Manage Menu", link: "/admin/menu" },
-  { tag: "Create Menu", link: "/admin/create" },
+  { tag: "Захилга хянах", link: "/admin/orders" },
+  { tag: "Цэс хянах", link: "/admin/menu" },
+  { tag: "Цэс бүртгэх", link: "/admin/create" },
+  { tag: "Ширээ захиалга", link: "/admin/reserve" },
 ];
 
 const Navigation = () => {
@@ -57,6 +58,7 @@ const Navigation = () => {
           {/* links for admin page */}
           {pathName.substring(0, 6) === "/admin" &&
             adminNavItems.map((item, index) => (
+              
               <li
                 key={index}
                 className={`cursor-pointer mx-2 font-semibold transition duration-300 border-b-2 py-2 hover:text-black hover:border-yellow ${

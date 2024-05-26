@@ -35,7 +35,7 @@ const SignatureMenu = ({ menuList }) => {
       <WaveWrap>
         <div className="bg-light-yellow">
           <div className="custom-container sticky top-16 bg-light-yellow z-20 pb-1 sm:py-4">
-            <h2 className="font-bold text-4xl w-full">Our Signature Menu</h2>
+            <h2 className="font-bold text-4xl w-full">Хоолнуудын цэс</h2>
             <CategoryFilter onChangeCategory={changeCategoryHandler} />
           </div>
           <div className="custom-container">

@@ -56,13 +56,14 @@ const Testimonial = () => {
     <section id="feedback" className="bg-white py-12 lg:py-24">
       <div className="custom-container flex flex-col lg:grid lg:grid-cols-6 gap-6 items-center">
         <div className="lg:col-span-2 flex flex-col gap-4 items-start">
-          <h2 className="font-bold text-[45px] w-[80%] ">
-            What they said about us
+          <h2 className="font-bold text-[45px] w-[90%] leading-[120%]">
+            Санал хүсэлтүүд
           </h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consectetur quod fugit debitis reprehenderit culpa alias in
-            voluptate voluptatem labore ab!
+          <p className="text-justify">
+            Таны санал бидэнд үргэлж шинэ санаа, урам зориг өгдөг бөгөөд бидний
+            үйлчилгээг сайжруулах үнэтэй сургаал болдог. Таны тусламжтайгаар бид
+            илүү сайжирч, танд илүү таатай орчин, амтат хоол, сэтгэл ханамжтай
+            үйлчилгээг хүргэх болно. Баярлалаа!😘
           </p>
         </div>
         <div

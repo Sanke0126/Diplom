@@ -14,8 +14,8 @@ const ProceedInKitchen = ({ updatedAt }) => {
           <BurgerIcon size="5rem" />
         </div>
         <div className="animate-pulse">
-          <h3>Your meals is on the kitchen</h3>
-          <h3>{`estimated ready time ${formattedReadyTime}`}</h3>
+          <h3>Таны хоол бэлтгэгдэж байна</h3>
+          <h3>{`Таны захиалга ${formattedReadyTime} бэлэн болно`}</h3>
         </div>
       </div>
     </div>

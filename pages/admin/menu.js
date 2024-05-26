@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 import LoadingIcon from "../../components/icons/LoadingIcon";
 import ProductForm from "../../components/product/productForm";
 import ProductList from "../../components/product/productList";
-import Image from "next/image";
 
 const AdminMenuManagerPage = () => {
   const router = useRouter();
@@ -96,7 +95,7 @@ const AdminMenuManagerPage = () => {
         <title>Linguine | Manage Menu</title>
         <meta
           name="description"
-          content="Menu manager of Hungray landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
+          content="Menu manager of Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
         />
         <meta
           name="keywords"

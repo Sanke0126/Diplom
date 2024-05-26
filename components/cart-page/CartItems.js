@@ -22,7 +22,7 @@ const CartItems = ({ cartItems, totalAmount }) => {
           ))}
         </div>
         <div className="flex justify-between items-center text-xl font-bold">
-          <h3>Total amount</h3>
+          <h3>Нийт төлбөр</h3>
           <h3>{totalAmount}</h3>
         </div>
       </div>

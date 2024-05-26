@@ -3,16 +3,18 @@ import AboutCard from "./AboutCard";
 const About = () => {
   return (
     <section id="about-us" className="bg-white mb-12">
-      <h1 className="text-center text-[50px] font-bold mb-[120px]">About us</h1>
+      <h1 className="text-center text-[50px] font-bold mb-[120px]">
+        Бидний тухай
+      </h1>
       <div>
         <h1 className="text-center text-[35px] font-bold">
-          We Invite you to Visit Our Restaurant
+          Та бүхнийг манай ресторанаар зочлохыг урьж байна.
         </h1>
         <p className="text-center text-[15px] mt-4 w-[50%] mx-auto text-[#666666] mb-[50px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Манай ресторан бол амтат хоол, гайхалтай үйлчилгээ, сайхан орчныг
+          хослуулсан онцгой газар юм. Бид шинэхэн, чанартай орц найрлагыг
+          ашиглан төрөл бүрийн хоол бэлтгэдэг бөгөөд таныг ид шидийн амттай
+          аялалд урьж байна.
         </p>
       </div>
       <div className="w-full h-[500px]">
@@ -27,9 +29,9 @@ const About = () => {
       </div>
       <div>
         <h1 className="text-center text-[30px] font-bold mt-[50px]">
-          What We Do
+        Бид юу хийдэг вэ ?
         </h1>
-        <AboutCard/>
+        <AboutCard />
       </div>
     </section>
   );

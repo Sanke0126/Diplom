@@ -123,7 +123,7 @@ const Cart = ({ restoStatus }) => {
         className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[30vh]"
       >
         <RestaurantCrossIcon size="4rem" />
-        <span className="text-3xl font-bold">Sorry, Hungray is closed :(</span>
+        <span className="text-3xl font-bold">Уучлаарай , Манай ресторан хаалттай байна :(</span>
       </section>
     );
   }
@@ -148,7 +148,7 @@ const Cart = ({ restoStatus }) => {
         className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[30vh]"
       >
         <BagIcon size="4rem" />
-        <span className="text-3xl font-bold">Your Bag is empty :(</span>
+        <span className="text-3xl font-bold">Таны захиалга хоосон байна :(</span>
       </section>
     );
   }
@@ -160,7 +160,7 @@ const Cart = ({ restoStatus }) => {
           onSubmit={submitHandler}
           className="border-2 border-stone-200 shadow-xl pt-4 pb-8 px-4 rounded-xl lg:px-8"
         >
-          <h2 className="text-2xl font-bold mb-4">Your ordered meals</h2>
+          <h2 className="text-2xl font-bold mb-4">Таны захиалга</h2>
           <div className="lg:grid lg:grid-cols-2 xl:grid-cols-5 lg:gap-12 lg:items-end ">
             <CartItems
               cartItems={cartItems}
