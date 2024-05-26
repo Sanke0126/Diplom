@@ -12,7 +12,13 @@ const ContactForm = () => {
       <form>
         <div className="control-group">
           <label htmlFor="name">Таны нэр</label>
-          <input type="text" name="name" id="name" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autoComplete="name"
+            placeholder="Your Name"
+          />
         </div>
         <h3 className="mb-2">Лингвини рестораныг та хэрхэн үнэлэх вэ?</h3>
         <div
@@ -90,6 +96,7 @@ const ContactForm = () => {
             onChange={() => setStars(5)}
           />
         </div>
+        
         <div className="control-group">
           <label htmlFor="feedback">Санал хүсэлт</label>
           <textarea name="feedback" id="feedback" cols="30" rows="3"></textarea>

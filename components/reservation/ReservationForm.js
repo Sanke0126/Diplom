@@ -68,6 +68,7 @@ const ReservationForm = () => {
             placeholder="Naranbaatar"
             value={formData.name}
             onChange={handleChange}
+            autoComplete="name"
           />
         </div>
         <div className="control-group">
@@ -80,6 +81,7 @@ const ReservationForm = () => {
             placeholder="********@example.com"
             value={formData.email}
             onChange={handleChange}
+            autoComplete="email"
           />
         </div>
       </div>
@@ -94,6 +96,7 @@ const ReservationForm = () => {
             placeholder="+976 ********"
             value={formData.phone}
             onChange={handleChange}
+            autoComplete="tel"
           />
         </div>
         <div className="control-group">

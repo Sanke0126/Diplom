@@ -21,6 +21,7 @@ const Reservation = () => {
             objectPosition: "center",
           }}
           className="-translate-y-16"
+          priority
         />
       </div>
       <div className="bg-white">
