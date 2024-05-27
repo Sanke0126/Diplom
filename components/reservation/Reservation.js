@@ -6,7 +6,7 @@ const Reservation = () => {
   return (
     <section
       id="reservation"
-      className="custom-container py-32 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"
+      className="custom-container py-4 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"
     >
       <div className="hidden lg:block w-full aspect-square mx-auto overflow-hidden rounded-[20px]">
         <Image

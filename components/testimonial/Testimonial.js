@@ -64,7 +64,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section id="feedback" className="bg-white py-12 lg:py-24">
+    <section id="feedback" className="bg-white py-6 lg:py-24">
       <div className="custom-container sm:flex flex-col lg:grid lg:grid-cols-6 gap-6 items-center">
         <div className="lg:col-span-2 flex flex-col gap-4 items-start">
           <h2 className="font-bold text-[45px] w-[95%] leading-[120%] sm:leading-[180%]">
