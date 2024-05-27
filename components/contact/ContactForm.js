@@ -165,7 +165,7 @@ const ContactForm = () => {
             name="name"
             id="name"
             autoComplete="name"
-            placeholder="Your Name"
+            placeholder=""
             value={formData.name}
             onChange={handleChange}
           />
