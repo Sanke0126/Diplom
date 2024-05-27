@@ -9,6 +9,7 @@ import BagIcon from "../icons/BagIcon";
 import axiosBase from "../../utils/axios-base";
 import LoadingIcon from "../icons/LoadingIcon";
 import RestaurantCrossIcon from "../icons/RestaurantCrossIcon";
+import Link from "next/link";
 
 const Cart = ({ restoStatus }) => {
   const router = useRouter();
@@ -123,7 +124,9 @@ const Cart = ({ restoStatus }) => {
         className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[30vh]"
       >
         <RestaurantCrossIcon size="4rem" />
-        <span className="text-3xl font-bold">Уучлаарай , Манай ресторан хаалттай байна :(</span>
+        <span className="text-3xl font-bold">
+          Уучлаарай , Манай ресторан хаалттай байна :(
+        </span>
       </section>
     );
   }
@@ -148,7 +151,12 @@ const Cart = ({ restoStatus }) => {
         className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[30vh]"
       >
         <BagIcon size="4rem" />
-        <span className="text-3xl font-bold">Таны захиалга хоосон байна :(</span>
+        <span className="text-3xl font-bold mb-[20px]">
+          Таны захиалга хоосон байна :(
+        </span>
+        <Link className="button bg-yellow text-black" href={"/"}>
+          Нүүр хуудас
+        </Link>
       </section>
     );
   }
