@@ -12,18 +12,18 @@ const TestimonialCard = ({ item }) => {
   })} ${formatedHours}:${formatedMinutes}`;
 
   return (
-    <div className="flex flex-col justify-between gap-4 shadow-xl h-full p-4 bg-stone-50 border-2 border-stone-100 w-[350px] rounded-xl">
+    <div className="flex flex-col justify-between gap-4 shadow-xl h-[200px] p-4 bg-stone-50 border-2 border-stone-100 w-[350px] sm:w-[350px] rounded-xl">
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
-          <Image
+          {/* <Image
             className="h-full aspect-square bg-stone-300 rounded-full"
             alt="image of reviewer"
             src={item.image}
             width={50}
             height={50}
-          />
+          /> */}
           <div>
-            <h3 className="font-bold text-2xl">{item.name}</h3>
+            <h3 className="font-bold text-3xl mb-[10px]">{item.name}</h3>
             <Stars num={item.stars} />
           </div>
         </div>
