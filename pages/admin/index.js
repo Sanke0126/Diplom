@@ -40,7 +40,7 @@ const AdminPage = ({ orderList, restoStatus }) => {
     return (
       <>
         <Head>
-          <title>Linguine | Admin Dashboard</title>
+          <title>Linguine | A-Dashboard</title>
           <meta
             name="description"
             content="Admin dashboard of Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
@@ -49,7 +49,7 @@ const AdminPage = ({ orderList, restoStatus }) => {
             name="keywords"
             content="restaurant, online order application, working space"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Cake.ico" />
         </Head>
         <Admin orderList={orderList} restoStatus={restoStatus} />;
       </>

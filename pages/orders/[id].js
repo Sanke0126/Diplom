@@ -94,10 +94,10 @@ const OrderPage = ({ order }) => {
   return (
     <>
       <Head>
-        <title>Linguine | Your order is being proceed</title>
+        <title>Linguine | Order in process</title>
         <meta name="description" content="Your cart" />
         <meta name="keywords" content="Proceeding your order..." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cake.ico" />
       </Head>
 
       <Proceed

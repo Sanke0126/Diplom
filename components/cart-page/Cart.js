@@ -148,7 +148,7 @@ const Cart = ({ restoStatus }) => {
     return (
       <section
         id="cart"
-        className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[30vh]"
+        className="flex flex-col justify-end items-center gap-4 text-stone-400 h-[40vh]"
       >
         <BagIcon size="4rem" />
         <span className="text-3xl font-bold mb-[20px]">

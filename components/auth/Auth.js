@@ -45,13 +45,20 @@ const Auth = () => {
   };
 
   return (
-    <div className="h-[50vh] custom-container w-full grid place-items-center">
-      <div className="w-full md:w-[450px] shadow-xl px-6 pb-4 rounded-xl border-2 border-stone-100">
-        <h2 className="text-center text-2xl font-bold py-4">Login</h2>
+    <div className="h-[65vh] custom-container w-full grid place-items-center">
+      <div className="w-full md:w-[450px] shadow-2xl px-10 pb-4 rounded-xl border-2 border-black-100 bg-light-yellow">
+        <h2
+          id="Login"
+          className="text-center text-[40px] font-bold py-4 mt-[10px]"
+        >
+          Login
+        </h2>
         <form onSubmit={submitHandler}>
           <div className="control-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email"></label>
             <input
+              className="mt-[10px]"
+              placeholder="Email"
               type="text"
               name="email"
               id="email"
@@ -61,8 +68,10 @@ const Auth = () => {
             />
           </div>
           <div className="control-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password"></label>
             <input
+              className="mt-[15px]"
+              placeholder="Password"
               type="password"
               name="password"
               id="password"
@@ -71,9 +80,9 @@ const Auth = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div className="mt-12">
-            <button className="button bg-blue-600 text-white w-full">
-              login
+          <div className="mt-12 flex justify-center">
+            <button className="button bg-yellow text-black w-[250px] mb-[20px]">
+              Login
             </button>
           </div>
         </form>

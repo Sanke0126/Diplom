@@ -14,7 +14,7 @@ export default function CartPage({ restoStatus }) {
           name="keywords"
           content="restaurant, online order application, working space"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cake.ico" />
       </Head>
       <Cart restoStatus={restoStatus || defaultRestoStatus} />
     </>

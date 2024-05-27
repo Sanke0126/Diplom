@@ -101,7 +101,7 @@ const AdminMenuManagerPage = () => {
           name="keywords"
           content="restaurant, online order application, working space"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cake.ico" />
       </Head>
       <div>
         <h1 className="mt-[20px] text-center text-[40px] font-semibold">

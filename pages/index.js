@@ -8,7 +8,7 @@ import Testimonial from "../components/testimonial/Testimonial";
 import Reservation from "../components/reservation/Reservation";
 import CartMobileBtn from "../components/navigation/cart/CartMobileBtn";
 import { useSelector } from "react-redux";
-
+import { UtensilsIcon } from "../components/icons/Utensils";
 export default function HomePage({ menuList }) {
   const cartItems = useSelector((state) => state.cart.items);
 
@@ -32,7 +32,7 @@ export default function HomePage({ menuList }) {
   return (
     <div>
       <Head>
-        <title>Linguine | your best resto in town</title>
+        <title>Linguine | Home</title>
         <meta
           name="description"
           content="Linguine landing page, restaurant with online reservation, online delivery order, or in-resto online ordering system"
@@ -41,7 +41,7 @@ export default function HomePage({ menuList }) {
           name="keywords"
           content="restaurant, online order application, working space"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cake.ico" />
       </Head>
       {bagNum > 0 && <CartMobileBtn bagNum={bagNum} />}
       <Home />

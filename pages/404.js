@@ -13,7 +13,7 @@ export default function Custom404() {
           name="keywords"
           content="restaurant, online order application, working space"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cake.ico" />
       </Head>
       <div className="bg-white h-[70vh] grid place-items-center">
         <h2 className="text-3xl font-bold text-stone-500 tracking-wider">
